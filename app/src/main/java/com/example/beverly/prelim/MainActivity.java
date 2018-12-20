@@ -2,6 +2,7 @@ package com.example.beverly.prelim;
 
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
+import android.view.Gravity;
 import android.view.View;
 import android.widget.AdapterView;
 import android.widget.Button;
@@ -63,8 +64,12 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 //get the data from the EditText
                 String name = txtName.getText().toString();
 
+
+                Toast toast = new Toast(getApplicationContext());
+                toast.setGravity(Gravity.TOP | Gravity.LEFT, 0, 0);
+
                 //set trappings
-                if((txtName.equals("") && cboCourse.getSelectedItem().equals("-- SELECT COURSE --"))){
+                if((txtName.equals("") && cboCourse.equals("-- SELECT COURSE --") && cboCourse.getSelectedItem().equals("-- SELECT COURSE --"))){
                     Toast.makeText(MainActivity.this, "Please fill in all fields!", Toast.LENGTH_SHORT).show();
                 }
                 else{
