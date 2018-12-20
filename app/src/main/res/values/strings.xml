@@ -1,0 +1,13 @@
+<resources>
+    <string name="app_name">Prelim</string>
+
+    <string-array name="courselist">
+        <item>--- SELECT COURSE ---</item>
+        <item>BSIT</item>
+        <item>BSCS</item>
+        <item>BSIM</item>
+        <item>BSIS</item>
+        <item>BSCPE</item>
+    </string-array>
+
+</resources>
